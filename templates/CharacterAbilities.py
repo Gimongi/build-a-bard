@@ -17,11 +17,9 @@ class CharacterAbilities:
     saves = []
 
     def __init__(self, charClass, charRace, tags):
-        self.assignAbilities(charClass, self.randomiseAbilities())
-        self.initialiseChar()
-        return self
+        self.assignClassAbilities(charClass, charRace, self.randomiseAbilities())
 
-    def __init__(self, str, dex, con, int, wis, cha):
+    def setAbilities(self, str, dex, con, int, wis, cha):
         self.strength = str
         self.dexterity = dex
         self.constitution = con
@@ -29,8 +27,7 @@ class CharacterAbilities:
         self.wisdom = wis
         self.charisma = cha
 
-
-    def randomiseAbilities():
+    def randomiseAbilities(self):
         scores = []
         for x in range(6):
             current = []
@@ -42,7 +39,7 @@ class CharacterAbilities:
         scores.sort(reverse=True)
         return scores
 
-    def assignAbilities(self, charClass, scores):
+    def assignClassAbilities(self, charClass, charRace, scores):
         if charClass==CharClass.artificer:
             self.hitDie = 8
             self.intelligence = scores[0]
@@ -178,7 +175,7 @@ class CharacterAbilities:
             self.charisma = scores[0]
             del scores[0]
 
-    def assignScoresRandomly(self, scores):
+    def assignClassAbilitiesRandomly(self, scores):
         random.shuffle(scores)
         self.strength = scores[0]
         self.dexterity = scores[1]
