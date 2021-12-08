@@ -1,9 +1,26 @@
 import enum
 
-class Abilities(enum.Enum):
-    strength = 1
-    dexterity = 2
-    constitution = 3
-    intelligence = 4
-    wisdom = 5
-    charisma = 6
+class Abilities(str, enum.Enum):
+    strength = "str"
+    dexterity = "dex"
+    constitution = "con"
+    intelligence = "int"
+    wisdom = "wis"
+    charisma = "cha"
+
+    @staticmethod
+    def fromStr(ability):
+        if ability == "str":
+            return Abilities.strength
+        elif ability == "dex":
+            return Abilities.dexterity
+        elif ability == "con":
+            return Abilities.constitution
+        elif ability == "int":
+            return Abilities.intelligence
+        elif ability == "wis":
+            return Abilities.wisdom
+        elif ability == "cha":
+            return Abilities.charisma
+        else:
+            raise NotImplementedError

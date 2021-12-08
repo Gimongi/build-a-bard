@@ -65,7 +65,7 @@ class CharacterAbilities:
             self.hitDie = 10
             self.strength = scores[0]
             self.dexterity = scores[1]
-            self.dexterity = scores[2]
+            self.intelligence = scores[2]
             del scores[2]
             del scores[1]
             del scores[0]
