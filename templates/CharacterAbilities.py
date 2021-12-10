@@ -129,7 +129,7 @@ class CharacterAbilities:
             self.saves.append(Abilities.dexterity)
             self.saves.append(Abilities.intelligence)
             pass
-        elif charClass==CharClass.sorcer:
+        elif charClass==CharClass.sorcerer:
             self.hitDie = 6
             self.charisma = scores[0]
             del scores[0]
