@@ -1,5 +1,4 @@
 import enum
-# from templates.Character import Character
 
 class CharRace(str, enum.Enum):
     aarakocra = "aarakocra"
@@ -137,7 +136,3 @@ class CharRace(str, enum.Enum):
             return CharRace.yuan_ti
         else:
             raise NotImplementedError
-
-    # @staticmethod
-    # def applyRaceToCharacter(char: Character):
-        

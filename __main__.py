@@ -9,4 +9,4 @@ class __main__:
     char = CharClass.fromStr(sys.argv[2])
     level = sys.argv[3]
     newChar = Character(char, race, level, "")
-    newChar.characterInfo()
+    # newChar.characterInfo()
