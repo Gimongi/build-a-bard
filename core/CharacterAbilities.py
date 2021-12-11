@@ -5,12 +5,12 @@ from utils.Utils import Utils
 
 
 class CharacterAbilities:
-    strength = 0
-    dexterity = 0
-    constitution = 0
-    intelligence = 0
-    wisdom = 0
-    charisma = 0
+    # strength = 0
+    # dexterity = 0
+    # constitution = 0
+    # intelligence = 0
+    # wisdom = 0
+    # charisma = 0
 
     hitDie = 0
 
@@ -19,8 +19,9 @@ class CharacterAbilities:
     def __init__(self, charClass, charRace, tags):
         self.assignClassAbilities(charClass, charRace, self.randomiseAbilities())
 
-    def setAbilities(self, str, dex, con, int, wis, cha):
-        self.strength = str
+    @staticmethod
+    def setAbilities(char, str, dex, con, int, wis, cha):
+        char.strength = str
         self.dexterity = dex
         self.constitution = con
         self.intelligence = int

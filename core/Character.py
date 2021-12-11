@@ -1,4 +1,4 @@
-from templates.CharacterAbilities import CharacterAbilities
+from core.CharacterAbilities import CharacterAbilities
 from utils.Abilities import Abilities
 from utils.Alignment import Alignment
 from utils.CharClass import CharClass
@@ -7,11 +7,23 @@ from utils.Utils import Utils
 
 
 class Character:
+    name = ""
+
     level = 0
+
     health = 0
     hitDie = 0
-    # age = 0
+    
     speed = 0
+
+    strength = 0
+    dexterity = 0
+    constitution = 0
+    intelligence = 0
+    wisdom = 0
+    charisma = 0
+
+    # age = 0
     languages = []
 
     features = []
