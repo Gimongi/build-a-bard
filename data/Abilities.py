@@ -23,4 +23,4 @@ class Abilities(str, enum.Enum):
         elif ability == "cha":
             return Abilities.charisma
         else:
-            raise NotImplementedError
+            return NotImplementedError

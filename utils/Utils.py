@@ -37,3 +37,7 @@ class Utils:
         else:
             # throw error
             return 0
+
+
+#TODO getRandomRace
+#TODO getRandomClass
