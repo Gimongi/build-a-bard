@@ -23,7 +23,7 @@ class CharSubRace(str, enum.Enum):
     dragonborn_metallic = "metallic dragonborn"
 
     dwarf_hill = "hill dwarf"
-    dwarf_moountain = "mountain dwarf"
+    dwarf_mountain = "mountain dwarf"
     dwarf_grey = "grey dwarf"
 
     elf_high = "high elf"
@@ -138,7 +138,7 @@ class CharSubRace(str, enum.Enum):
         elif subRace == "hill dwarf":
             return CharSubRace.dwarf_hill
         elif subRace == "mountain dwarf":
-            return CharSubRace.dwarf_moountain
+            return CharSubRace.dwarf_mountain
         elif subRace == "grey dwarf":
             return CharSubRace.dwarf_grey
 

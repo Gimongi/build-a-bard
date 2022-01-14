@@ -1,5 +1,6 @@
 from core.Character import Character
 from data.CharRace import CharRace
+from data.CharSubRace import CharSubRace
 
 
 class Racifier:
@@ -343,7 +344,7 @@ class Racifier:
             character.languages.append("Infernal")
             pass
         elif character.charRace == CharRace.tortle:
-            character.strength += 2
+            character.strength += 1
             character.wisdom += 1
 
             character.speed = 30
@@ -401,6 +402,173 @@ class Racifier:
             character.languages.append("Abyssal")
             character.languages.append("Draconic")
             pass
+        else:
+            raise NotImplementedError
+
+
+
+    # Applies subrace to character
+    @staticmethod
+    def applySubRaceToCharacter(character):
+        # type: (Character) -> None
+        if character.charSubRace == CharSubRace.aarakocra_eagle:
+            pass
+        elif character.charSubRace == CharSubRace.aarakocra_macaw:
+            pass
+        elif character.charSubRace == CharSubRace.aarakocra_owl:
+            pass
+        elif character.charSubRace == CharSubRace.aarakocra_potoo:
+            pass
+        elif character.charSubRace == CharSubRace.aarakocra_finch:
+            pass
+        elif character.charSubRace == CharSubRace.aarakocra_raven:
+            pass
+        elif character.charSubRace == CharSubRace.aarakocra_albatross:
+            pass
+        elif character.charSubRace == CharSubRace.aarakocra_chicken:
+            pass
+        elif character.charSubRace == CharSubRace.aarakocra_penguin:
+            pass
+        elif character.charSubRace == CharSubRace.aarakocra_ostrich:
+            pass
+
+        elif character.charSubRace == CharSubRace.aasimar_protector:
+            pass
+        elif character.charSubRace == CharSubRace.aasimar_scourge:
+            pass
+        elif character.charSubRace == CharSubRace.aasimar_fallen:
+            pass
+
+        elif character.charSubRace == CharSubRace.dragonborn_chromatic:
+            pass
+        elif character.charSubRace == CharSubRace.dragonborn_gem:
+            pass
+        elif character.charSubRace == CharSubRace.dragonborn_metallic:
+            pass
+
+        elif character.charSubRace == CharSubRace.dwarf_hill:
+            pass
+        elif character.charSubRace == CharSubRace.dwarf_mountain:
+            pass
+        elif character.charSubRace == CharSubRace.dwarf_grey:
+            pass
+
+        elif character.charSubRace == CharSubRace.elf_high:
+            pass
+        elif character.charSubRace == CharSubRace.elf_wood:
+            pass
+
+        elif character.charSubRace == CharSubRace.genasi_air:
+            pass
+        elif character.charSubRace == CharSubRace.genasi_earth:
+            pass
+        elif character.charSubRace == CharSubRace.genasi_fire:
+            pass
+        elif character.charSubRace == CharSubRace.genasi_water:
+            pass
+
+        elif character.charSubRace == CharSubRace.githyanki:
+            pass
+        elif character.charSubRace == CharSubRace.githzerai:
+            pass
+
+        elif character.charSubRace == CharSubRace.gnome_deep:
+            pass
+        elif character.charSubRace == CharSubRace.gnome_forest:
+            pass
+        elif character.charSubRace == CharSubRace.gnome_rock:
+            pass
+
+        elif character.charSubRace == CharSubRace.goblin_greenskin:
+            pass
+        elif character.charSubRace == CharSubRace.goblin_boggart:
+            pass
+        elif character.charSubRace == CharSubRace.goblin_gremlin:
+            pass
+
+        elif character.charSubRace == CharSubRace.halfling_lightfoot:
+            pass
+        elif character.charSubRace == CharSubRace.halfling_stout:
+            pass
+
+        elif character.charSubRace == CharSubRace.kobold_burrows:
+            pass
+        elif character.charSubRace == CharSubRace.kobold_loredrake:
+            pass
+
+        elif character.charSubRace == CharSubRace.leonin_royal:
+            pass
+        elif character.charSubRace == CharSubRace.leonin_wild:
+            pass
+        elif character.charSubRace == CharSubRace.leonin_grey:
+            pass
+
+        elif character.charSubRace == CharSubRace.loxodon_ravnica:
+            pass
+        elif character.charSubRace == CharSubRace.loxodon_mirrodin:
+            pass
+        elif character.charSubRace == CharSubRace.loxodon_tarkir:
+            pass
+
+        elif character.charSubRace == CharSubRace.orc_common:
+            pass
+        elif character.charSubRace == CharSubRace.orc_grey:
+            pass
+        elif character.charSubRace == CharSubRace.orc_blue:
+            pass
+        elif character.charSubRace == CharSubRace.orc_purple:
+            pass
+
+        elif character.charSubRace == CharSubRace.shifter_beasthide:
+            pass
+        elif character.charSubRace == CharSubRace.shifter_longtooth:
+            pass
+        elif character.charSubRace == CharSubRace.shifter_swiftstride:
+            pass
+        elif character.charSubRace == CharSubRace.shifter_wildhunt:
+            pass
+        elif character.charSubRace == CharSubRace.shifter_cliffwalk:
+            pass
+        elif character.charSubRace == CharSubRace.shifter_razorclaw:
+            pass
+
+        elif character.charSubRace == CharSubRace.tabaxi_mountain:
+            pass
+        elif character.charSubRace == CharSubRace.tabaxi_grassland:
+            pass
+        elif character.charSubRace == CharSubRace.tabaxi_jungle:
+            pass
+        elif character.charSubRace == CharSubRace.tabaxi_forest:
+            pass
+
+        elif character.charSubRace == CharSubRace.tiefling_asmodeus:
+            pass
+        elif character.charSubRace == CharSubRace.tiefling_baalzebul:
+            pass
+        elif character.charSubRace == CharSubRace.tiefling_dispater:
+            pass
+        elif character.charSubRace == CharSubRace.tiefling_fierna:
+            pass
+        elif character.charSubRace == CharSubRace.tiefling_glasya:
+            pass
+        elif character.charSubRace == CharSubRace.tiefling_levistus:
+            pass
+        elif character.charSubRace == CharSubRace.tiefling_mammon:
+            pass
+        elif character.charSubRace == CharSubRace.tiefling_mephistopheles:
+            pass
+        elif character.charSubRace == CharSubRace.tiefling_zarial:
+            pass
+        elif character.charSubRace == CharSubRace.tiefling_abyssal:
+            pass
+
+        elif character.charSubRace == CharSubRace.tortle_razorback:
+            pass
+        elif character.charSubRace == CharSubRace.tortle_softshell:
+            pass
+        elif character.charSubRace == CharSubRace.tortle_desert:
+            pass
+        
         else:
             raise NotImplementedError
 

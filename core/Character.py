@@ -1,10 +1,12 @@
 from data.CharClass import CharClass
 from data.CharRace import CharRace
+from data.CharSubRace import CharSubRace
 
 
 class Character:
     name = ""
     charRace = CharRace
+    charSubRace = CharSubRace
     charClass = CharClass
 
     level = 0
