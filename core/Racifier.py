@@ -5,10 +5,6 @@ from data.CharSubRace import CharSubRace
 
 class Racifier:
 
-    # def __init__(self, character):
-    #     self.character = character
-    #     pass
-
     @staticmethod
     def applyRaceToCharacter(character):
         # type: (Character) -> None
@@ -50,7 +46,7 @@ class Racifier:
             pass
         elif character.charRace == CharRace.changeling:
             character.charisma += 2
-            # TODO: 1 other ability score
+            # TODO: increase one ability by 1
 
             character.speed = 30
 
@@ -84,7 +80,7 @@ class Racifier:
             pass
         elif character.charRace == CharRace.fairy:
             # TODO increase one ability by 2
-            # TODO 1 other ability score
+            # TODO increase one ability by 1
 
             character.speed = 30
 
@@ -179,8 +175,8 @@ class Racifier:
             character.languages.append("Gnomish")
             pass
         elif character.charRace == CharRace.harengon:
-            # TODO increase one score by 2
-            # TODO increase another score by
+            # TODO increase one ability by 2
+            # TODO increase one ability by 1
 
             character.speed = 30
 
@@ -213,7 +209,7 @@ class Racifier:
         elif character.charRace == CharRace.kalashtar:
             character.wisdom += 1
             character.charisma += 1
-            # TODO increase one score by 1
+            # TODO increase one ability by 1
 
             character.speed = 30
 
@@ -385,7 +381,7 @@ class Racifier:
             pass
         elif character.charRace == CharRace.warforged:
             character.constitution += 2
-            # TODO 1 other language
+            # TODO increase one ability by 1
 
             character.speed = 30
 
