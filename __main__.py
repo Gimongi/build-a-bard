@@ -8,5 +8,9 @@ class __main__:
     race = CharRace.fromStr(sys.argv[1])
     char = CharClass.fromStr(sys.argv[2])
     level = sys.argv[3]
+
     newChar = Character(char, race, level, "")
+    newChar = Racifier.applyRaceToCharacter(newChar)
+    CharUtils.assignClassAbilities(newChar)
+    
     newChar.characterInfo()
