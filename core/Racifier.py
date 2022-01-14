@@ -265,7 +265,7 @@ class Racifier:
             character.languages.append("Aquan")
             pass
         elif character.charRace == CharRace.loxodon:
-            character.constitution += 2
+            character.constitution += 1
             character.wisdom += 1
 
             character.speed = 30
@@ -328,7 +328,6 @@ class Racifier:
             pass
         elif character.charRace == CharRace.tabaxi:
             character.dexterity += 2
-            character.charisma += 1
 
             character.speed = 30
 
@@ -337,7 +336,6 @@ class Racifier:
             pass
         elif character.charRace == CharRace.tiefling:
             character.charisma += 2
-            character.intelligence += 1
 
             character.speed = 30
 
