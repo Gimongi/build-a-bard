@@ -1,6 +1,8 @@
 import random
-from utils.Abilities import Abilities
-from utils.CharClass import CharClass
+
+from core.Character import Character
+from data.Abilities import Abilities
+from data.CharClass import CharClass
 
 class CharUtils:
 
@@ -28,6 +30,7 @@ class CharUtils:
 
     @staticmethod
     def assignClassAbilities(character):
+        # type: (Character) -> None
         scores = CharUtils.randomiseAbilities()
 
         if character.charClass==CharClass.artificer:

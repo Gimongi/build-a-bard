@@ -1,7 +1,7 @@
 class Utils:
 
     @staticmethod
-    def getModifier(abilityScore):
+    def getAbilityModifier(abilityScore):
         if abilityScore == 1:
             return -5
         elif abilityScore <= 3:
